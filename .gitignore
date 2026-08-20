@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 node_modules/
 dist/
 .env
@@ -8,13 +7,3 @@ dist/
 coverage/
 .DS_Store
 doggo-bot.lock
-=======
-node_modules/
-dist/
-.env
-.env.*
-!.env.example
-*.log
-coverage/
-.DS_Store
->>>>>>> origin/main
