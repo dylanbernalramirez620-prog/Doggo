@@ -1,0 +1,12 @@
+{
+  "name": "doggo-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "build": "npm run build --workspace @doggo/config && npm run build --workspace @doggo/bot && npm run build --workspace @doggo/dashboard",
+    "dev:bot": "npm run build --workspace @doggo/config && npm run dev --workspace @doggo/bot",
+    "dev:dashboard": "npm run build --workspace @doggo/config && npm run dev --workspace @doggo/dashboard",
+    "typecheck": "npm run build --workspace @doggo/config && npm run typecheck --workspace @doggo/bot && npm run typecheck --workspace @doggo/dashboard"
+  }
+}
